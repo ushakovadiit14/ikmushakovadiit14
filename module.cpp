@@ -124,7 +124,7 @@ void Queue::processCommand(Queue& queue, const string& command) { // Реали�
                 cout << "ok ( Добавлено число " << num << ". Текущий размер: " << queue.size() << " )\n";
             }
             else {
-                cout << "Ошибка: '" << numStr << "' не является числом!\n";
+                cout << "error: '" << numStr << "' не является числом!\n";
             }
         }
         else {
@@ -132,6 +132,6 @@ void Queue::processCommand(Queue& queue, const string& command) { // Реали�
         }
     }
     catch (const exception& e) {
-        cout << "Ошибка: " << e.what() << "\n";
+        cout << "error: " << e.what() << "\n";
     }
 }
